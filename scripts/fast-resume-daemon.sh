@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 scan_dir() {
-    for f in ~/* ; do
+    for f in /input/* ; do
         attempt_fast_resume "$(dirname ${f})" "$(basename ${f})"
         sleep 1
     done
